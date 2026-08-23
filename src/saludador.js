@@ -8,7 +8,7 @@ function obtenerSaludoPorHora(hora) {
   }
 }
 
-function saludar(nombre, hora, genero) {
+function saludar(nombre, hora, genero, edad) {
   if (hora === undefined) {
     hora = new Date().getHours();
   }
@@ -16,12 +16,22 @@ function saludar(nombre, hora, genero) {
   const saludoHora = obtenerSaludoPorHora(hora);
   let prefijo = "";
 
-  if (genero === "M") {
-    prefijo = " estimado ";
-  } else if (genero === "F") {
-    prefijo = " estimada ";
-  } else if (nombre) {
-    prefijo = " ";
+  if (edad > 30) {
+    if (genero === "M") {
+      prefijo = " Senor. ";
+    } else if (genero === "F") {
+      prefijo = " Senora. ";
+    } else if (nombre) {
+      prefijo = " ";
+    }
+  } else {
+    if (genero === "M") {
+      prefijo = " Senorito ";
+    } else if (genero === "F") {
+      prefijo = " Senorita ";
+    } else if (nombre) {
+      prefijo = " ";
+    }
   }
 
   if (nombre) {
