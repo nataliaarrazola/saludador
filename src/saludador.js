@@ -8,15 +8,24 @@ function obtenerSaludoPorHora(hora) {
   }
 }
 
-function saludar(nombre, hora) {
+function saludar(nombre, hora, genero) {
   if (hora === undefined) {
     hora = new Date().getHours();
   }
 
   const saludoHora = obtenerSaludoPorHora(hora);
+  let prefijo = "";
+
+  if (genero === "M") {
+    prefijo = " estimado ";
+  } else if (genero === "F") {
+    prefijo = " estimada ";
+  } else if (nombre) {
+    prefijo = " ";
+  }
 
   if (nombre) {
-    return saludoHora + " " + nombre;
+    return saludoHora + prefijo + nombre;
   }
   return saludoHora;
 }
