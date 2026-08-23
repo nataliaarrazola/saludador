@@ -8,5 +8,7 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const nombre = nombreInput.value.trim();
-  div.innerHTML = "<p>" + saludar(nombre) + "</p>";
+  const horaActual = new Date().getHours();
+
+  div.innerHTML = "<p>" + saludar(nombre, horaActual) + "</p>";
 });
