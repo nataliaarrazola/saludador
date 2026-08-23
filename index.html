@@ -2,13 +2,19 @@
 <html xml:lang="es">
   <head>
     <title>Saludador</title>
+  <head>
+    <title>Saludador</title>
   </head>
   <body>
     <h1>Saludador</h1>
     <form id="saludador-form">
-      <input type="submit" value="Saludar" id="sumar-button" />
+      <label for="nombre-input">Nombre:</label>
+      <input type="text" id="nombre-input" placeholder="Ingresa tu nombre" />
+      <br /><br />
+      <input type="submit" value="Saludar" id="saludar-button" />
     </form>
     <div id="resultado-div"></div>
+
     <script type="module" src="./src/presenter.js"></script>
   </body>
 </html>
