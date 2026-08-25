@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-08-25T02:34:27.000Z",
+      "message": "fix(saludador):agregar saludo en ingles y  correcion de algunos errores",
+      "url": "https://github.com/nataliaarrazola/saludador/commit/HEAD"
+    },
+    "stats": {
+      "total": 64,
+      "additions": 46,
+      "deletions": 18,
+      "date": "2026-08-25"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
