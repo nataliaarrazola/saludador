@@ -1,16 +1,35 @@
 [
   {
-    "sha": "HEAD",
+    "sha": "c9e56d70c8bf119dc81c8bf3c10e7d6135847f72",
     "author": "Natalia",
     "commit": {
       "date": "2026-08-25T02:34:27.000Z",
       "message": "fix(saludador):agregar saludo en ingles y  correcion de algunos errores",
-      "url": "https://github.com/nataliaarrazola/saludador/commit/HEAD"
+      "url": "https://github.com/nataliaarrazola/saludador/commit/c9e56d70c8bf119dc81c8bf3c10e7d6135847f72"
     },
     "stats": {
       "total": 64,
       "additions": 46,
       "deletions": 18,
+      "date": "2026-08-25"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Natalia",
+    "commit": {
+      "date": "2026-08-25T13:48:13.000Z",
+      "message": "feat(saludador): agregar validacion contra numeros en el campo nombre",
+      "url": "https://github.com/nataliaarrazola/saludador/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 32,
+      "deletions": 34,
       "date": "2026-08-25"
     },
     "coverage": 100,
